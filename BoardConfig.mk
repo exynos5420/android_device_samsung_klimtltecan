@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/klimtlte
+LOCAL_PATH := device/samsung/klimtltecan
 
 # Platform
 BOARD_VENDOR := samsung
@@ -35,7 +35,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 TARGET_OTA_ASSERT_DEVICE := klimtlte
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := exynos5420_klimtlte_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := exynos5420_klimtltecan_defconfig
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
