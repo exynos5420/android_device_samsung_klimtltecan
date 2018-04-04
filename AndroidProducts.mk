@@ -18,3 +18,8 @@ LOCAL_PATH := device/samsung/klimtltecan
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_klimtltecan.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_klimtltecan-user \
+    lineage_klimtltecan-userdebug \
+    lineage_klimtltecan-eng
