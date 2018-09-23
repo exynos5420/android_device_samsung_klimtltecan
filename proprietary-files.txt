@@ -97,6 +97,8 @@ vendor/etc/nxp/mVoIPWebEx/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt
 vendor/etc/nxp/mVoIPWebEx/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt
 
 # RIL
+# cbd, from boot.img and pinned to stop removal when extracting from system image
+bin/cbd|3fc49580af86f26b8bdd4859c3ab617f1a12c034
 etc/plmn_delta.bin
 etc/plmn_se13.bin
 lib/libsec-ril.so
