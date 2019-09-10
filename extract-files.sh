@@ -72,4 +72,7 @@ BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib/libsec-ril.so
 (perl -pi -e "s/\/system\/bin\/gpsd/\/vendor\/bin\/gpsd/g" $BLOB_ROOT/vendor/lib/libsec-ril.so)
 
+# replace SSLv3_client_method with SSLv23_method
+sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" $BLOB_ROOT/vendor/bin/gpsd
+
 "${MY_DIR}/setup-makefiles.sh"
