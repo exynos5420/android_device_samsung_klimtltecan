@@ -53,7 +53,7 @@ BOARD_MODEM_TYPE := xmm7260
 
 # Shims
 TARGET_LD_SHIM_LIBS += \
-    /system/bin/gpsd|/system/lib/libshim_dmitry_gps.so
+    /vendor/bin/gpsd|/vendor/lib/libshim_dmitry_gps.so
 
 # Inherit from the proprietary version
 -include vendor/samsung/klimtltecan/BoardConfigVendor.mk
