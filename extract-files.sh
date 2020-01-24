@@ -70,4 +70,6 @@ BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 # Vendor separation
 sed -i "s|system/etc|vendor/etc|g" $BLOB_ROOT/vendor/lib/libsec-ril.so
+(perl -pi -e "s/\/system\/bin\/gpsd/\/vendor\/bin\/gpsd/g" $BLOB_ROOT/vendor/lib/libsec-ril.so)
+
 "${MY_DIR}/setup-makefiles.sh"
