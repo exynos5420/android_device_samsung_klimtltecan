@@ -56,8 +56,8 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 BOARD_SEPOLICY_DIRS += device/samsung/exynos5420-common/sepolicy
 BOARD_SEPOLICY_DIRS += device/samsung/klimtltecan/sepolicy
 
-# Cyanogen Hardware
-BOARD_HARDWARE_CLASS := $(COMMON_PATH)/cmhw
+# LineageOS Hardware
+BOARD_HARDWARE_CLASS := $(COMMON_PATH)/lineagehw
 
 # Camera: portrait orientation
 BOARD_CAMERA_FRONT_ROTATION := 270
