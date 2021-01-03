@@ -28,11 +28,17 @@ BOARD_PROVIDES_LIBRIL := true
 # hardware/samsung/ril
 BOARD_MODEM_TYPE := xmm7260
 
+# RIL shim
+TARGET_LD_SHIM_LIBS += /system/lib/libsec-ril.so|libsec-ril_shim.so
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 # Bootloader
 TARGET_OTA_ASSERT_DEVICE := klimtltecan
+
+# GPS-shims
+TARGET_LD_SHIM_LIBS += /system/bin/gpsd|libshim.so
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_klimtltecan_defconfig
