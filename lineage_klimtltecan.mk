@@ -35,6 +35,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=klimtltecan \
-    PRIVATE_BUILD_DESC="klimtltevl-user 5.0.2 LRX22G T705WVLU2BOH1 release-keys"
+    PRIVATE_BUILD_DESC="klimtltevl-user 5.0.2 LRX22G T705WVLU2BVH2 release-keys"
 
-BUILD_FINGERPRINT := samsung/klimtltevl/klimtltecan:5.0.2/LRX22G/T705WVLU2BOH1:user/release-keys
+BUILD_FINGERPRINT := samsung/klimtltevl/klimtltecan:5.0.2/LRX22G/T705WVLU2BVH2:user/release-keys
